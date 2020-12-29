@@ -1,0 +1,11 @@
+pulseaudio-modules-bt (1.4~r26719261) groovy; urgency=medium
+
+  * pulseaudio modules bt v1.4 build r26719261
+
+ -- berglh (PPA) <berglh@gmail.com>  Tue, 20 Oct 2020 01:19:50 +0000
+
+pulseaudio-modules-bt (1.4~r26719261-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- berglh (PPA) <berglh@gmail.com>  Tue, 20 Oct 2020 01:19:06 +0000

@@ -1,0 +1,43 @@
+Source: pulseaudio-modules-bt
+Priority: optional
+Maintainer:  berglh (PPA) <berglh@gmail.com>
+Build-Depends: debhelper (>= 12),
+    dh-exec,
+    dpkg-dev (>= 1.17.14),
+    cmake (>= 3.0),
+    pkg-config,
+    libltdl-dev,
+    libpulse-dev (>=13.0),
+    pulseaudio,
+    libdbus-1-dev,
+    libbluetooth-dev [linux-any] <!stage1>,
+    libsbc-dev [linux-any],
+    libavcodec-dev (>= 7:4.0),
+    libfdk-aac-dev (>= 0.1.5),
+    libldac [linux-any]
+Standards-Version: 4.4.0
+Section: sound
+Homepage: https://github.com/EHfive/pulseaudio-modules-bt
+Vcs-Git: https://github.com/EHfive/pulseaudio-modules-bt.git
+Vcs-Browser: https://github.com/EHfive/pulseaudio-modules-bt
+
+Package: pulseaudio-modules-bt
+Architecture: linux-any
+Priority: optional
+Depends: ${shlibs:Depends}, ${misc:Depends}, bluez (>= 5.50), pulseaudio (>= 13.0)
+Suggests: libavcodec-extra58 (>= 4.1.4), libldac (>= 2.0.2.3)
+Conflicts: pulseaudio-module-bluetooth
+Provides: pulseaudio-module-bluetooth
+Replaces: pulseaudio-module-bluetooth
+Description: Bluetooth module for PulseAudio sound server with SBC, LDAC, aptX, aptX HD, AAC support
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ This module enables PulseAudio to work with bluetooth devices, like headsets
+ or audio gateways.
+ .
+ Add Sony LDAC, aptX, aptX HD, AAC codecs (A2DP Audio) support.
+ https://github.com/EHfive/pulseaudio-modules-bt
+ .
+ The module is called module-bluetooth.
