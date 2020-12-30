@@ -12,9 +12,7 @@ Build-Depends: debhelper (>= 12),
     libdbus-1-dev,
     libbluetooth-dev [linux-any] <!stage1>,
     libsbc-dev [linux-any],
-    libavcodec-dev (>= 7:4.0),
-    libfdk-aac-dev (>= 0.1.5),
-    libldac (>= 2.0.0)
+    libavcodec-dev (>= 7:4.0)
 Standards-Version: 4.4.0
 Section: sound
 Homepage: https://github.com/EHfive/pulseaudio-modules-bt
