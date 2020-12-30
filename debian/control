@@ -14,7 +14,7 @@ Build-Depends: debhelper (>= 12),
     libsbc-dev [linux-any],
     libavcodec-dev (>= 7:4.0),
     libfdk-aac-dev (>= 0.1.5),
-    libldac [linux-any]
+    libldac (>= 2.0.0)
 Standards-Version: 4.4.0
 Section: sound
 Homepage: https://github.com/EHfive/pulseaudio-modules-bt
@@ -22,7 +22,7 @@ Vcs-Git: https://github.com/EHfive/pulseaudio-modules-bt.git
 Vcs-Browser: https://github.com/EHfive/pulseaudio-modules-bt
 
 Package: pulseaudio-modules-bt
-Architecture: linux-any
+Architecture: any
 Priority: optional
 Depends: ${shlibs:Depends}, ${misc:Depends}, bluez (>= 5.50), pulseaudio (>= 13.0)
 Suggests: libavcodec-extra58 (>= 4.1.4), libldac (>= 2.0.2.3)
